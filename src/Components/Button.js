@@ -1,9 +1,6 @@
 import PropTypes from 'prop-types'
 
 export const Button = ({color, text, onClick}) => {
-    // const onClick = () => {
-    //    console.log('Clickity Click') 
-    // }
 
   return (
     <button onClick={onClick} style={{backgroundColor: color}} className='btn'>{text}</button>

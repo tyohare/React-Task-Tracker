@@ -1,16 +1,14 @@
-const tasks = [
-{
-    id: 3,
-    text: 'food shopping',
-    day: 'Feb 6th',
-    reminder: true,
-},
-]
-export const Tasks = () => {
+import { Task } from "./Task"
+
+
+export const Tasks = ({tasks, onDelete}) => {
+
+
+
   return (
     <>
     {tasks.map((task) => (
-        <h3>{task.text}</h3>
+        <Task key={task.id} task={task} onDelete={onDelete} />
     ))}
     </>
   )
